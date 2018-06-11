@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NSSlidingSegmentedControl: UISegmentedControl {
+open class NSSlidingSegmentedControl: UISegmentedControl {
     
     var controlHeight: CGFloat = 41
     var underlineHeight: CGFloat = 2
@@ -28,7 +28,7 @@ class NSSlidingSegmentedControl: UISegmentedControl {
         setUp()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setUp()
     }
