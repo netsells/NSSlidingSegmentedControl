@@ -10,18 +10,55 @@ import UIKit
 
 open class NSSlidingSegmentedControl: UISegmentedControl {
     
-    public var controlHeight: CGFloat = 41
-    public var underlineHeight: CGFloat = 2
-    public var underlineColor = UIColor.blue
+    // MARK: - Underline config
+    public var controlHeight: CGFloat = 41 {
+        didSet {
+            addUnderline()
+        }
+    }
     
-    public var selectedFont: UIFont?
-    public var unselectedFont: UIFont?
-    public var selectedTextColor = UIColor.blue
-    public var unselectedTextColor = UIColor.gray
+    public var underlineHeight: CGFloat = 2 {
+        didSet {
+            addUnderline()
+        }
+    }
     
+    public var underlineColor = UIColor.blue {
+        didSet {
+            addUnderline()
+        }
+    }
+    
+    // MARK: - Fonts
+    public var selectedFont: UIFont? {
+        didSet {
+            configureFonts()
+        }
+    }
+    
+    public var unselectedFont: UIFont? {
+        didSet {
+            configureFonts()
+        }
+    }
+    
+    public var selectedTextColor = UIColor.blue {
+        didSet {
+            configureFonts()
+        }
+    }
+
+    public var unselectedTextColor = UIColor.gray {
+        didSet {
+            configureFonts()
+        }
+    }
+    
+    // MARK: - Private properties
     private let underline = UIView()
     private var underlineWidth: CGFloat = 0
     private var token: NSKeyValueObservation?
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,7 +69,8 @@ open class NSSlidingSegmentedControl: UISegmentedControl {
         super.init(coder: aDecoder)
         setUp()
     }
-    
+
+    // MARK: - Set up methods
     private func setUp() {
         removeDefaultStyles()
         heightAnchor.constraint(equalToConstant: controlHeight).isActive = true
@@ -49,6 +87,7 @@ open class NSSlidingSegmentedControl: UISegmentedControl {
     }
     
     private func addUnderline() {
+        underline.removeFromSuperview()
         underlineWidth = bounds.size.width / CGFloat(numberOfSegments)
         let startY = controlHeight - underlineHeight
         underline.backgroundColor = underlineColor
@@ -61,7 +100,7 @@ open class NSSlidingSegmentedControl: UISegmentedControl {
         let y = controlHeight - underlineHeight
         
         UIView.animate(withDuration: 0.25) {
-            self.underline.frame = CGRect(x: newX, y: y, width: self.underlineWidth, height: self.self.underlineHeight)
+            self.underline.frame = CGRect(x: newX, y: y, width: self.underlineWidth, height: self.underlineHeight)
         }
     }
     
