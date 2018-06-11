@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SlidingSegmentedControl: UISegmentedControl {
+class NSSlidingSegmentedControl: UISegmentedControl {
     
     var controlHeight: CGFloat = 41
     var underlineHeight: CGFloat = 2
