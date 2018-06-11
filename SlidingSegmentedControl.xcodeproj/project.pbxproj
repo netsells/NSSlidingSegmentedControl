@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		FAC90D6A20CE8154005F631E /* SlidingSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC90D6820CE8154005F631E /* SlidingSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAC90D7120CE8184005F631E /* SlidingSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC90D7020CE8184005F631E /* SlidingSegmentedControl.swift */; };
+		FAC90D7820CE8384005F631E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FAC90D7620CE8384005F631E /* README.md */; };
+		FAC90D7920CE8384005F631E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FAC90D7720CE8384005F631E /* LICENSE */; };
+		FAF83BAA20CE84B500B587D5 /* SlidingSegmentedControl.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FAF83BA920CE84B500B587D5 /* SlidingSegmentedControl.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAC90D6520CE8154005F631E /* SlidingSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlidingSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC90D6820CE8154005F631E /* SlidingSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlidingSegmentedControl.h; sourceTree = "<group>"; };
 		FAC90D6920CE8154005F631E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC90D7020CE8184005F631E /* SlidingSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingSegmentedControl.swift; sourceTree = "<group>"; };
+		FAC90D7620CE8384005F631E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		FAC90D7720CE8384005F631E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		FAF83BA920CE84B500B587D5 /* SlidingSegmentedControl.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SlidingSegmentedControl.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +56,20 @@
 			children = (
 				FAC90D6820CE8154005F631E /* SlidingSegmentedControl.h */,
 				FAC90D6920CE8154005F631E /* Info.plist */,
+				FAF83BAB20CE861A00B587D5 /* Classes */,
+				FAC90D7720CE8384005F631E /* LICENSE */,
+				FAF83BA920CE84B500B587D5 /* SlidingSegmentedControl.podspec */,
+				FAC90D7620CE8384005F631E /* README.md */,
 			);
 			path = SlidingSegmentedControl;
+			sourceTree = "<group>";
+		};
+		FAF83BAB20CE861A00B587D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAC90D7020CE8184005F631E /* SlidingSegmentedControl.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +115,7 @@
 				TargetAttributes = {
 					FAC90D6420CE8154005F631E = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -120,6 +141,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC90D7920CE8384005F631E /* LICENSE in Resources */,
+				FAF83BAA20CE84B500B587D5 /* SlidingSegmentedControl.podspec in Resources */,
+				FAC90D7820CE8384005F631E /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC90D7120CE8184005F631E /* SlidingSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +284,7 @@
 		FAC90D6E20CE8154005F631E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.netsells.SlidingSegmentedControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +311,7 @@
 		FAC90D6F20CE8154005F631E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
