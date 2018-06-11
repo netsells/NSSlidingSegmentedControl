@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FAC90D6A20CE8154005F631E /* NSSlidingSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC90D6820CE8154005F631E /* NSSlidingSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAC90D7120CE8184005F631E /* SlidingSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC90D7020CE8184005F631E /* SlidingSegmentedControl.swift */; };
+		FAC90D7120CE8184005F631E /* NSSlidingSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC90D7020CE8184005F631E /* NSSlidingSegmentedControl.swift */; };
 		FAC90D7820CE8384005F631E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FAC90D7620CE8384005F631E /* README.md */; };
 		FAC90D7920CE8384005F631E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FAC90D7720CE8384005F631E /* LICENSE */; };
 		FAF83BAA20CE84B500B587D5 /* NSSlidingSegmentedControl.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FAF83BA920CE84B500B587D5 /* NSSlidingSegmentedControl.podspec */; };
@@ -18,7 +18,7 @@
 		FAC90D6520CE8154005F631E /* NSSlidingSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSSlidingSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC90D6820CE8154005F631E /* NSSlidingSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSSlidingSegmentedControl.h; sourceTree = "<group>"; };
 		FAC90D6920CE8154005F631E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAC90D7020CE8184005F631E /* SlidingSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingSegmentedControl.swift; sourceTree = "<group>"; };
+		FAC90D7020CE8184005F631E /* NSSlidingSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSlidingSegmentedControl.swift; sourceTree = "<group>"; };
 		FAC90D7620CE8384005F631E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		FAC90D7720CE8384005F631E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		FAF83BA920CE84B500B587D5 /* NSSlidingSegmentedControl.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSSlidingSegmentedControl.podspec; sourceTree = SOURCE_ROOT; };
@@ -67,7 +67,7 @@
 		FAF83BAB20CE861A00B587D5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FAC90D7020CE8184005F631E /* SlidingSegmentedControl.swift */,
+				FAC90D7020CE8184005F631E /* NSSlidingSegmentedControl.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC90D7120CE8184005F631E /* SlidingSegmentedControl.swift in Sources */,
+				FAC90D7120CE8184005F631E /* NSSlidingSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
