@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NSSlidingSegmentedControl'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'An underline styled segmented control'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ A handy set of functions and extensions for your project. A project full of help
   s.source           = { :git => 'https://github.com/netsells/NSSlidingSegmentedControl.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/netsells'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'NSSlidingSegmentedControl/Classes/**/*'
   s.swift_version = '4.1'
