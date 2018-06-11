@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint NSUtils.podspec' to ensure this is a
+# Be sure to run `pod lib lint NSSlidingSegmentedControl.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'SlidingSegmentedControl'
+  s.name             = 'NSSlidingSegmentedControl'
   s.version          = '0.1.0'
   s.summary          = 'An underline styled segmented control'
 
@@ -21,20 +21,20 @@ Pod::Spec.new do |s|
 A handy set of functions and extensions for your project. A project full of helper functions and extensions to give you a boost when starting a new project.
                        DESC
 
-  s.homepage         = 'https://github.com/netsells/SlidingSegmentedControl'
+  s.homepage         = 'https://github.com/netsells/NSSlidingSegmentedControl'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'alexbriar' => 'alex.briar@netsells.co.uk' }
-  s.source           = { :git => 'https://github.com/netsells/SlidingSegmentedControl.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/netsells/NSSlidingSegmentedControl.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/netsells'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'SlidingSegmentedControl/Classes/**/*'
+  s.source_files = 'NSSlidingSegmentedControl/Classes/**/*'
   s.swift_version = '4.1'
   
   # s.resource_bundles = {
-  #   'NSUtils' => ['SlidingSegmentedControl/Assets/*.png']
+  #   'NSUtils' => ['NSSlidingSegmentedControl/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
