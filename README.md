@@ -15,4 +15,4 @@ Alex Briar, alex.briar@netsells.co.uk
 
 ## License
 
-SlidingSegmentedControl is available under the MIT license. See the LICENSE file for more info.
+NSSlidingSegmentedControl is available under the MIT license. See the LICENSE file for more info.
