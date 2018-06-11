@@ -10,14 +10,14 @@ import UIKit
 
 open class NSSlidingSegmentedControl: UISegmentedControl {
     
-    var controlHeight: CGFloat = 41
-    var underlineHeight: CGFloat = 2
-    var underlineColor = UIColor.blue
+    public var controlHeight: CGFloat = 41
+    public var underlineHeight: CGFloat = 2
+    public var underlineColor = UIColor.blue
     
-    var selectedFont: UIFont?
-    var unselectedFont: UIFont?
-    var selectedTextColor = UIColor.blue
-    var unselectedTextColor = UIColor.gray
+    public var selectedFont: UIFont?
+    public var unselectedFont: UIFont?
+    public var selectedTextColor = UIColor.blue
+    public var unselectedTextColor = UIColor.gray
     
     private let underline = UIView()
     private var underlineWidth: CGFloat = 0
