@@ -86,7 +86,7 @@ open class NSSlidingSegmentedControl: UISegmentedControl {
             self.addUnderline()
         })
         
-        widthToken = observe(\.bounds.size.width, changeHandler: { (_, _) in
+        widthToken = observe(\.bounds, changeHandler: { (_, _) in
             self.addUnderline()
         })
     }
