@@ -57,8 +57,9 @@ open class NSSlidingSegmentedControl: UISegmentedControl {
     // MARK: - Private properties
     private let underline = UIView()
     private var underlineWidth: CGFloat = 0
-    private var token: NSKeyValueObservation?
-    
+    private var selectedSegmentIndexToken: NSKeyValueObservation?
+    private var numberOfSegmentsToken: NSKeyValueObservation?
+    private var widthToken: NSKeyValueObservation?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -77,13 +78,23 @@ open class NSSlidingSegmentedControl: UISegmentedControl {
         configureFonts()
         addUnderline()
         
-        token = observe(\.selectedSegmentIndex) { (_, _) in
+        selectedSegmentIndexToken = observe(\.selectedSegmentIndex) { (_, _) in
             self.moveUnderline(to: self.selectedSegmentIndex)
         }
+        
+        numberOfSegmentsToken = observe(\.numberOfSegments, changeHandler: { (_, _) in
+            self.addUnderline()
+        })
+        
+        widthToken = observe(\.bounds.size.width, changeHandler: { (_, _) in
+            self.addUnderline()
+        })
     }
     
     deinit {
-        token = nil
+        selectedSegmentIndexToken = nil
+        numberOfSegmentsToken = nil
+        widthToken = nil
     }
     
     private func addUnderline() {
