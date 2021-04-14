@@ -1,5 +1,7 @@
 # NSSlidingSegmentedControl
 
+It is created and maintained by the [Netsells team](https://netsells.co.uk/)
+
 ## Installation
 
 NSSlidingSegmentedControl is available through [CocoaPods](http://cocoapods.org). To install
